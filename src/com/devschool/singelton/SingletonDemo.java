@@ -5,7 +5,7 @@ package com.devschool.singelton;
  */
 public class SingletonDemo {
 
-    private static SingletonDemo instance = null;
+    private static volatile SingletonDemo instance = null;
 
     private SingletonDemo() {
 
