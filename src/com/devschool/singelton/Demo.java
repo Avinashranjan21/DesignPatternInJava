@@ -12,6 +12,13 @@ public class Demo {
         System.out.println("object 1 : "+mSingletonDemo);
         System.out.println("object 2 : "+mSingletonDemo2);
 
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                SingletonDemo mSingletonDemo3 = SingletonDemo.getInstance();
+                System.out.println("object 3 : "+mSingletonDemo3);
+            }
+        }).run();
 
     }
 }
