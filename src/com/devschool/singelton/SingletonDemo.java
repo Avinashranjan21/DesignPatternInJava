@@ -13,7 +13,11 @@ public class SingletonDemo {
 
     public static SingletonDemo getInstance() {
         if (instance == null) {
-            instance = new SingletonDemo();
+            synchronized (SingletonDemo.class) {
+                if (instance == null) {
+                    instance = new SingletonDemo();
+                }
+            }
         }
         return instance;
     }
