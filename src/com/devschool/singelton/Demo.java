@@ -22,3 +22,9 @@ public class Demo {
 
     }
 }
+
+/* Sample output:
+    object 1 : com.devschool.singelton.SingletonDemo@511d50c0
+    object 2 : com.devschool.singelton.SingletonDemo@511d50c0
+    object 3 : com.devschool.singelton.SingletonDemo@511d50c0
+ */
